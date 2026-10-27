@@ -1,5 +1,13 @@
 /* Browser-only storefront prototype. Shopify integration points are documented in README. */
 (()=>{'use strict';const products=window.KLIVE_PRODUCTS||[];const $=s=>document.querySelector(s);const $$=s=>[...document.querySelectorAll(s)];const money=n=>'₹'+Number(n).toLocaleString('en-IN');const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));const find=id=>products.find(p=>p.id===id);let cart=[];try{const raw=JSON.parse(localStorage.getItem('klive-bag')||'[]');if(Array.isArray(raw))cart=raw.filter(x=>find(x.id)&&Number.isInteger(x.qty)&&x.qty>0).map(x=>({id:x.id,qty:Math.min(x.qty,99)}));}catch{}let activeProduct=null;
+const siteHeader=$('.site-header');
+if(siteHeader){
+ const updateHeader=()=>siteHeader.classList.toggle('is-scrolled',window.scrollY>10);
+ window.addEventListener('scroll',updateHeader,{passive:true});
+ window.addEventListener('pageshow',updateHeader);
+ updateHeader();
+}
+
 function persist(){try{localStorage.setItem('klive-bag',JSON.stringify(cart));}catch{}renderCart();}
 function renderCart(){const count=cart.reduce((s,x)=>s+x.qty,0);$$('.cart-count').forEach(x=>x.textContent=count);$('#cartTotal').textContent=money(cart.reduce((s,x)=>s+find(x.id).price*x.qty,0));$('#cartItems').innerHTML=cart.length?cart.map(x=>{const p=find(x.id);return `<article class="cart-item"><a href="product.html?id=${p.id}"><img src="assets/images/${p.image}" alt="${esc(p.name)}"></a><div><h3>${esc(p.name)}</h3><p class="price">${money(p.price)} / ${esc(p.size)}</p><div class="cart-controls"><button data-cart="minus" data-id="${p.id}" aria-label="Reduce quantity of ${esc(p.name)}">−</button><span aria-label="Quantity">${x.qty}</span><button data-cart="plus" data-id="${p.id}" aria-label="Increase quantity of ${esc(p.name)}">+</button><button class="cart-remove" data-cart="remove" data-id="${p.id}">Remove</button></div></div></article>`}).join(''):'<p class="cart-empty">Your bag is waiting for a little care.</p><a class="text-link" href="shop.html">EXPLORE THE COLLECTION →</a>';$('#checkoutButton').disabled=!cart.length;$('#checkoutNotice').textContent='';}
 function add(id,qty=1){if(!find(id))return;qty=Math.max(1,Math.min(99,Number(qty)||1));const line=cart.find(x=>x.id===id);if(line)line.qty=Math.min(99,line.qty+qty);else cart.push({id,qty});persist();bootstrap.Toast.getOrCreateInstance($('#cartToast'),{delay:2200}).show();}
