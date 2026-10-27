@@ -1,0 +1,792 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Product details | K Live Young</title>
+    <meta
+      name="description"
+      content="Discover Klive and curated Korean beauty. Explore skincare, facial mists and everyday baby-care essentials."
+    />
+    <link rel="icon" href="assets/images/logo.png" />
+    <link rel="stylesheet" href="assets/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body id="top" class="product-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="announcement">
+      A LITTLE KOREA. A DAILY RITUAL.
+      <a href="shop.html">DISCOVER THE EDIT →</a>
+    </div>
+    <header class="site-header">
+      <nav class="navbar container-fluid" aria-label="Main navigation">
+        <div class="nav-side">
+          <button
+            class="nav-link mobile-menu"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#menuDrawer"
+            aria-controls="menuDrawer"
+            aria-label="Open menu"
+          >
+            ☰</button
+          ><a class="nav-link desktop-link" href="shop.html">PRODUCTS</a
+          ><a class="nav-link desktop-link" href="index.html#our-story"
+            >OUR STORY</a
+          ><button
+            class="icon-button"
+            data-bs-toggle="modal"
+            data-bs-target="#searchModal"
+            aria-label="Search products"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="10" cy="10" r="6.5" />
+              <path d="m15 15 6 6" />
+            </svg>
+          </button>
+        </div>
+        <a class="brand" href="index.html" aria-label="K Live Young home"
+          ><img
+            src="assets/images/logo.png"
+            alt="K Live Young"
+            width="72"
+            height="72"
+        /></a>
+        <div class="nav-side nav-right">
+          <span class="region">IND / ₹</span
+          ><a class="nav-link account-link" href="contact.html">HELP</a
+          ><button
+            class="nav-link bag-button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#cartDrawer"
+            aria-controls="cartDrawer"
+          >
+            BAG <span class="cart-count">0</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="product-main row g-0">
+        <div class="col-lg-6 product-gallery">
+          <div class="breadcrumb-mini">
+            <a href="index.html">HOME</a> / <a href="shop.html">SKINCARE</a> /
+            <span data-product-name>KLIVE</span>
+          </div>
+          <div
+            id="productCarousel"
+            class="carousel slide"
+            data-bs-interval="false"
+          >
+            <div class="carousel-inner" id="gallerySlides"></div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#productCarousel"
+              data-bs-slide="prev"
+              aria-label="Previous product image"
+            >
+              <span class="gallery-arrow">←</span></button
+            ><button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#productCarousel"
+              data-bs-slide="next"
+              aria-label="Next product image"
+            >
+              <span class="gallery-arrow">→</span>
+            </button>
+          </div>
+          <div class="gallery-thumbs" id="galleryThumbs"></div>
+        </div>
+        <div class="col-lg-6 product-info">
+          <p class="eyebrow tag-label" data-product-category>FACE CARE</p>
+          <p class="small-copy">
+            <span data-product-brand>KLIVE</span> /
+            <span data-product-size>50 g</span>
+          </p>
+          <h1 data-product-name>Strong Barrier Repair Moisturizer</h1>
+          <a class="review-count" href="#product-reviews">NO REVIEWS YET</a>
+          <p class="product-description mono">
+            Make room for everyday facial care. Discover Klive and explore the
+            product information before choosing your next essential.
+          </p>
+          <p class="mono">Read the label and directions before use.</p>
+          <div class="d-flex align-items-center gap-3 mb-4">
+            <label for="productQty" class="small-copy">Quantity</label
+            ><input
+              class="form-control quantity-field"
+              id="productQty"
+              type="number"
+              min="1"
+              max="99"
+              value="1"
+            />
+          </div>
+          <button class="btn btn-dark w-100 product-add" id="mainAdd">
+            ADD TO BAG — <span data-product-price>₹799</span>
+          </button>
+          <div class="help-card">
+            <span class="eyebrow">YOUR SKINCARE QUESTIONS</span>
+            <p>Need help finding product information?</p>
+            <a class="text-link" href="contact.html">ASK OUR TEAM →</a>
+          </div>
+          <a class="routine-helper" href="product.html?id=mist"
+            ><img
+              src="assets/images/IMG_9954.webp"
+              alt="Klive Glow Moist Mist"
+            />
+            <div>
+              <span class="eyebrow">EXPLORE YOUR ROUTINE</span>
+              <p>Meet Glow Moist Mist</p>
+              <span class="small-copy">View product →</span>
+            </div></a
+          >
+          <div class="purchase-support">
+            <p>Delivery information<br /><span>Calculated at checkout</span></p>
+            <p>
+              Returns support<br /><button data-info="returns">
+                Read the policy
+              </button>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="attribute-strip">
+        <p>
+          <span data-product-brand>KLIVE</span> /
+          <span data-product-category>FACE CARE</span> /
+          <span data-product-size>50 G</span>
+        </p>
+      </section>
+      <section class="product-details row g-0">
+        <div class="col-md-6 details-copy">
+          <h2 data-product-name>Strong Barrier Repair Moisturizer</h2>
+          <p class="mono">
+            A place in your everyday ritual. Explore the details, read the label
+            and make a considered choice.
+          </p>
+          <div class="accordion accordion-flush" id="details">
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#details0"
+                  aria-expanded="false"
+                  aria-controls="details0"
+                >
+                  The product
+                </button>
+              </h3>
+              <div
+                id="details0"
+                class="accordion-collapse collapse"
+                data-bs-parent="#details"
+              >
+                <div class="accordion-body small-copy">
+                  Discover the selected product from our curated collection.
+                  Product sizes, prices and stock in this prototype should be
+                  checked against the final Shopify catalogue.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#details1"
+                  aria-expanded="false"
+                  aria-controls="details1"
+                >
+                  Texture and application
+                </button>
+              </h3>
+              <div
+                id="details1"
+                class="accordion-collapse collapse"
+                data-bs-parent="#details"
+              >
+                <div class="accordion-body small-copy">
+                  Refer to the approved product description and packaging for
+                  texture, application and routine guidance.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#details2"
+                  aria-expanded="false"
+                  aria-controls="details2"
+                >
+                  Formula information
+                </button>
+              </h3>
+              <div
+                id="details2"
+                class="accordion-collapse collapse"
+                data-bs-parent="#details"
+              >
+                <div class="accordion-body small-copy">
+                  The full ingredient list must match the approved product
+                  label. Contact the team if you need this information before
+                  ordering.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#details3"
+                  aria-expanded="false"
+                  aria-controls="details3"
+                >
+                  Product suitability
+                </button>
+              </h3>
+              <div
+                id="details3"
+                class="accordion-collapse collapse"
+                data-bs-parent="#details"
+              >
+                <div class="accordion-body small-copy">
+                  Check the product label for suitability and warnings. No
+                  clinical or universal-suitability claims are assumed in this
+                  design.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#details4"
+                  aria-expanded="false"
+                  aria-controls="details4"
+                >
+                  Packaging information
+                </button>
+              </h3>
+              <div
+                id="details4"
+                class="accordion-collapse collapse"
+                data-bs-parent="#details"
+              >
+                <div class="accordion-body small-copy">
+                  See the product images for the pack format and size. Recycling
+                  guidance should follow the instructions on the actual
+                  packaging.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#details5"
+                  aria-expanded="false"
+                  aria-controls="details5"
+                >
+                  Ingredients
+                </button>
+              </h3>
+              <div
+                id="details5"
+                class="accordion-collapse collapse"
+                data-bs-parent="#details"
+              >
+                <div class="accordion-body small-copy">
+                  Please refer to the full ingredient list on your product
+                  label. Approved ingredient copy can be connected through
+                  Shopify product metafields.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img
+            id="detailsPhoto"
+            src="assets/images/IMG_0010.webp"
+            alt="Klive campaign photograph"
+            class="panel-image"
+            loading="lazy"
+          />
+        </div>
+      </section>
+      <section id="product-faq" class="product-faq row g-0">
+        <div class="col-md-6">
+          <img
+            src="assets/images/IMG_0016.webp"
+            alt="Model with Klive moisturiser"
+            class="panel-image"
+            loading="lazy"
+          />
+        </div>
+        <div class="col-md-6 faq-copy">
+          <p class="mono">
+            All your frequently asked questions about
+            <span data-product-name>this product</span>.
+          </p>
+          <div class="accordion accordion-flush" id="faq">
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq0"
+                  aria-expanded="false"
+                  aria-controls="faq0"
+                >
+                  Where can I find the full ingredient list?
+                </button>
+              </h3>
+              <div
+                id="faq0"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faq"
+              >
+                <div class="accordion-body small-copy">
+                  Check the product label for the complete ingredient list.
+                  Contact our team if you need a clearer label image before
+                  purchasing.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq1"
+                  aria-expanded="false"
+                  aria-controls="faq1"
+                >
+                  How should I use this product?
+                </button>
+              </h3>
+              <div
+                id="faq1"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faq"
+              >
+                <div class="accordion-body small-copy">
+                  Follow the directions printed on the product packaging. Our
+                  team can help with product information before you order.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq2"
+                  aria-expanded="false"
+                  aria-controls="faq2"
+                >
+                  What pack sizes are available?
+                </button>
+              </h3>
+              <div
+                id="faq2"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faq"
+              >
+                <div class="accordion-body small-copy">
+                  The size for the selected product is shown above the purchase
+                  button. The catalogue information in this preview needs final
+                  client approval.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq3"
+                  aria-expanded="false"
+                  aria-controls="faq3"
+                >
+                  Can I combine it with other skincare?
+                </button>
+              </h3>
+              <div
+                id="faq3"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faq"
+              >
+                <div class="accordion-body small-copy">
+                  Read the directions for each product. For personalised skin
+                  advice, consult a qualified professional.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq4"
+                  aria-expanded="false"
+                  aria-controls="faq4"
+                >
+                  Where can I check product suitability?
+                </button>
+              </h3>
+              <div
+                id="faq4"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faq"
+              >
+                <div class="accordion-body small-copy">
+                  Review the ingredient list, usage directions and warnings on
+                  the label. Contact us for any missing product information.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq5"
+                  aria-expanded="false"
+                  aria-controls="faq5"
+                >
+                  What if I experience irritation?
+                </button>
+              </h3>
+              <div
+                id="faq5"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faq"
+              >
+                <div class="accordion-body small-copy">
+                  Stop using the product and seek appropriate professional
+                  advice. Contact our support team with your order details if
+                  needed.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq6"
+                  aria-expanded="false"
+                  aria-controls="faq6"
+                >
+                  How do I check delivery and shipping?
+                </button>
+              </h3>
+              <div
+                id="faq6"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faq"
+              >
+                <div class="accordion-body small-copy">
+                  Final shipping charges and available delivery methods are
+                  calculated during checkout on the live store.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq7"
+                  aria-expanded="false"
+                  aria-controls="faq7"
+                >
+                  How do I contact the team?
+                </button>
+              </h3>
+              <div
+                id="faq7"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faq"
+              >
+                <div class="accordion-body small-copy">
+                  Use the contact page or email kliveyoung@kstarship.in. Include
+                  your order number if your enquiry relates to an order.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="question-banner">
+        <img
+          src="assets/images/IMG_0005.webp"
+          alt="Klive skincare campaign"
+          loading="lazy"
+        />
+        <div class="question-content">
+          <h2>FAQ</h2>
+          <p>Questions about this product?</p>
+          <form id="questionForm">
+            <label for="productQuestion" class="visually-hidden"
+              >Your product question</label
+            ><input
+              id="productQuestion"
+              class="form-control"
+              required
+              maxlength="300"
+              placeholder="Ask a product question"
+            /><button aria-label="Prepare product enquiry" type="submit">
+              →
+            </button>
+          </form>
+          <p class="small-copy">Contact our team for product information.</p>
+          <p id="questionStatus" role="status" class="small-copy"></p>
+        </div>
+      </section>
+      <section id="product-reviews" class="row g-0 product-reviews">
+        <div class="col-md-6 reviews-copy">
+          <h2>Customer reviews</h2>
+          <p class="mono">No published reviews yet.</p>
+          <div class="review-empty">
+            <p>Be the first to share your experience.</p>
+            <p class="small-copy">
+              Reviews from verified customers will appear here once published.
+            </p>
+            <a class="btn btn-outline-dark" href="contact.html"
+              >CONTACT OUR TEAM</a
+            >
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img
+            src="assets/images/IMG_0010.webp"
+            alt="Klive skincare campaign"
+            class="panel-image"
+            loading="lazy"
+          />
+        </div>
+      </section>
+      <section class="brand-end">
+        <h2>KEEP A LITTLE CARE<br />IN YOUR EVERYDAY.</h2>
+        <p class="mono">Korean beauty, closer to you.</p>
+        <img
+          src="assets/images/logo.png"
+          alt="K Live Young"
+          width="130"
+          height="130"
+          loading="lazy"
+        />
+      </section>
+    </main>
+    <div class="sticky-buy" id="stickyBuy">
+      <span data-product-name>Strong Barrier Repair Moisturizer</span
+      ><button class="btn btn-dark" id="stickyAdd">
+        ADD TO BAG — <span data-product-price>₹799</span>
+      </button>
+    </div>
+    <footer class="site-footer">
+      <div class="row g-5">
+        <div class="col-6 col-lg-4">
+          <h2 class="eyebrow">ABOUT</h2>
+          <ul class="footer-links">
+            <li><a href="index.html#our-story">Our story</a></li>
+            <li><a href="shop.html">Our collection</a></li>
+            <li><a href="shop.html?brand=KLIVE">Klive</a></li>
+            <li><a href="shop.html?brand=AVCA">AVCA</a></li>
+            <li><a href="index.html#beauty-notes">Beauty notes</a></li>
+            <li><a href="contact.html">Get in touch</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-4">
+          <h2 class="eyebrow">HELP</h2>
+          <ul class="footer-links">
+            <li>
+              <a href="product.html#product-faq">Frequently asked questions</a>
+            </li>
+            <li><button data-info="shipping">Orders & delivery</button></li>
+            <li><button data-info="terms">Terms & conditions</button></li>
+            <li><button data-info="privacy">Privacy policy</button></li>
+            <li><button data-info="returns">Returns & refunds</button></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-4">
+          <label for="country" class="mb-3">Delivery country</label
+          ><select
+            id="country"
+            class="form-select"
+            aria-label="Delivery country"
+          >
+            <option>India — INR ₹</option>
+          </select>
+          <p class="small-copy mt-4">Korean beauty for your everyday ritual.</p>
+          <a href="index.html" class="footer-logo"
+            ><img
+              src="assets/images/logo.png"
+              alt="K Live Young"
+              width="70"
+              height="70"
+              loading="lazy"
+          /></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> K Live Young</span
+        ><button data-info="prototype">About this preview</button
+        ><a href="#top" aria-label="Back to top">↑</a>
+      </div>
+    </footer>
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="menuDrawer"
+      aria-labelledby="menuTitle"
+    >
+      <div class="offcanvas-header">
+        <h2 class="offcanvas-title" id="menuTitle">Explore K Live Young</h2>
+        <button
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close menu"
+        ></button>
+      </div>
+      <div class="offcanvas-body menu-links">
+        <a href="shop.html">Shop all</a
+        ><a href="shop.html?category=Face%20care">Face care</a
+        ><a href="shop.html?category=Mists%20%26%20toners">Mists & toners</a
+        ><a href="shop.html?category=Baby%20care">Baby care</a
+        ><a href="index.html#our-story">Our story</a
+        ><a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="cartDrawer"
+      aria-labelledby="cartTitle"
+    >
+      <div class="offcanvas-header">
+        <h2 id="cartTitle" class="offcanvas-title">
+          Your bag <span class="cart-count">0</span>
+        </h2>
+        <button
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close bag"
+        ></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column">
+        <div id="cartItems"></div>
+        <div class="cart-summary mt-auto">
+          <div class="d-flex justify-content-between py-3">
+            <span>Subtotal</span><strong id="cartTotal">₹0</strong>
+          </div>
+          <p class="small-copy">Shipping calculated at checkout.</p>
+          <button id="checkoutButton" class="btn btn-dark w-100">
+            CONTINUE TO CHECKOUT
+          </button>
+          <p
+            class="cart-notice small-copy"
+            id="checkoutNotice"
+            role="status"
+          ></p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="searchModal"
+      tabindex="-1"
+      aria-labelledby="searchTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 id="searchTitle" class="modal-title fs-5">
+              Find your everyday essentials
+            </h2>
+            <button
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close search"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <label for="searchInput" class="visually-hidden"
+              >Search products or brands</label
+            ><input
+              id="searchInput"
+              type="search"
+              class="form-control"
+              placeholder="Search products or brands…"
+              autocomplete="off"
+            />
+            <div id="searchResults" class="mt-4" aria-live="polite"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="infoModal"
+      tabindex="-1"
+      aria-labelledby="infoTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 id="infoTitle" class="modal-title fs-5"></h2>
+            <button
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close information"
+            ></button>
+          </div>
+          <div class="modal-body"><p id="infoText" class="small-copy"></p></div>
+        </div>
+      </div>
+    </div>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div id="cartToast" class="toast" role="status" aria-live="polite">
+        <div class="toast-body d-flex justify-content-between">
+          <span>Added to your bag.</span
+          ><button
+            class="btn-close ms-3"
+            data-bs-dismiss="toast"
+            aria-label="Dismiss notification"
+          ></button>
+        </div>
+      </div>
+    </div>
+    <script src="assets/vendor/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/catalog.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
